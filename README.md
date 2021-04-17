@@ -1,7 +1,8 @@
 # MyWays-TES21-Web-Development-Project
 An algorithm to effectively measure the learning progress for an online learning platform.
 
-**The site is live at:** https://coursedeck.netlify.app/
+**The site is live at:** https://coursedeck.netlify.app/ <br />
+**DEMO:** https://vimeo.com/538088974
 
 **Summary of logic used:**
 1. The logic is relatively simple. When a video is played, a function is run that sets a `localStorage variable` value, and when the user clicks next, the value is checked to see if it is equal to true or not. This acts as a boolean, and depending on these flags, the user may or may not be able to move on to the next content.
