@@ -31,4 +31,4 @@ the btn id, that way same btn can be used multiple times.
 ### Limitations
 I'm well aware of the fact this code falls short in many respects. However, as a novice, I lack experience with web development, JS, and other server-side languages.
 Also due to my upcoming final exams, I am facing time constraint. <br />
-In the future, I intend to update this logic and have critical code restricted to the server rather than making critical functions available to the user, which can be easily tweaked using a debugging tool, eventually making it a completely functional website.
+In the future, I intend to update this logic and have critical code restricted to the server rather than making critical functions available to the user, which can be easily tweaked using a debugging tool. <br />Eventually making it a completely functional website.
