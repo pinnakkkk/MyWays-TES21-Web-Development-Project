@@ -5,12 +5,12 @@ An algorithm to effectively measure the learning progress for an online learning
 
 **Summary of logic used:**
 1. The logic is relatively simple. When a video is played, a function is run that sets a `localStorage variable` value, and when the user clicks next, the value is checked to see if it is equal to true or not. This acts as a boolean, and depending on these flags, the user may or may not be able to move on to the next content.
-2. LocalStorage variables was used to store the data so even if browser is closed, variable value is not reset. PHP would have been a better alternative however wasn't possible to integrate due to time constraints. 
+2. LocalStorage variables was used to store the data so even if browser is closed, variable value is not reset. However A better alternative to local storage would be PHP.
 
 **DETAILED EXPLAINATION:**
 1. login using username: itspinnakkkk & pswd: Falcon29. (logic here is simple JS checks for both the inputs & comparing it with condition.)
 2. Select any course.
-3. Now on window load a function runs `loadin()` that is checking for any user activity using `document.activeElement === document.getElementById("IFRAME_ID")` happing in IFRAME. Once the video is played it will run a  `setTimeout` method with respect to videos length. once the video ends it sets a localStorage variable vaule
+3. Now on window load a function runs `loadin()` that is checking for any user activity using `document.activeElement === document.getElementById("IFRAME_ID")` happening in IFRAME. Once the video is played it will run a  `setTimeout` method with respect to videos length. once the video ends it sets a localStorage variable vaule
 `localStorage.setItem("content_1_flag_video_1", "1");` this  way each content at its finshed state flags a localvariable to value 1 which later is used to check.<br />
 * Alternative `setTimeout method` We could've used `video.onended` event to set localStorage variable, if we were to use video tag.
 4. If the user clicks the NEXT button before the video ends, a popup will appear stating that the user must watch the entire video.
